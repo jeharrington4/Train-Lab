@@ -25,3 +25,4 @@ a.motorRun(1,'forward')%train will go forward when powered
 
 %a.motorSpeed(1,X)
     %control the speed of the train
+    %X=0 will stop the train
