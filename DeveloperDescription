@@ -1,0 +1,16 @@
+In this file the variables and commands used will be listed and explained.
+a=arduino_sim()
+
+a=arduino('COM#')
+
+a.servoAttach(1)
+
+a.servoWrite(x,Y)
+
+rLED = 14;
+lLED = 15;
+a.pinMode(rLED,'output')
+a.pinMode(lLED,'output')
+
+a.motorRun(1,'forward')
+a.motorSpeed(1,X)
