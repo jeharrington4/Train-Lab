@@ -14,7 +14,7 @@ a.servoAttach(1)
             %170--> down
             %10-->up
             
-rLED = 14;
+rLED = 14;%right LED
 lLED = 15;
 a.pinMode(rLED,'output')%0@  right light
 a.pinMode(lLED,'output')%@0  left light
