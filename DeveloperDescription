@@ -1,11 +1,13 @@
 In this file the variables and commands used will be listed and explained.
-a=arduino_sim()
 
-a=arduino('COM#')
 
-a.servoAttach(1)
+a=arduino_sim(): connects to arduino simulator file to run train process w/o a arduino or track
 
-a.servoWrite(x,Y)
+a=arduino('COM#'): connects to physical arduino, # is the port the arduino is connected to
+
+a.servoAttach(1): connects the arduino to the servo located in the gate
+
+a.servoWrite(x,Y):
 
 rLED = 14;
 lLED = 15;
