@@ -3,16 +3,20 @@ In this file the variables and commands used will be listed and explained.
 
 a=arduino_sim(): connects to arduino simulator file to run train process w/o a arduino or track
 
-a=arduino('COM#'): connects to physical arduino, # is the port the arduino is connected to
+a=arduino('COM#'): connects to physical arduino, # is the port the arduino is connected to the computer with
 
 a.servoAttach(1): connects the arduino to the servo located in the gate
 
-a.servoWrite(x,Y):
+a.servoWrite(x,Y): moves the servo motor which the arm of the gate is attached to. 
+                        x is the servo number
+                        Y is the angle that the servo will rotate to 
 
-rLED = 14;
-lLED = 15;
-a.pinMode(rLED,'output')
-a.pinMode(lLED,'output')
+rLED = 14; : 
+lLED = 15; : 
+a.pinMode(rLED,'output'): 
+a.pinMode(lLED,'output'): 
 
-a.motorRun(1,'forward')
-a.motorSpeed(1,X)
+a.motorRun(1,'forward'): sets which way the train will move when powered (forward or backward)
+a.motorSpeed(1,X): the X value determines speed with a range of 0-255 
+
+
